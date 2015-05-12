@@ -23,6 +23,10 @@ binary_x86_64-linux 1
 collection-basic 1
 collection-latex 1
 collection-latexrecommended 1
+collection-latexextra 1
+collection-luatex 1
+collection-langfrench 1
+collection-humanities 1
 portable 1
 option_adjustrepo 1
 option_autobackup 1
