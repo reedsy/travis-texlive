@@ -50,7 +50,9 @@ END_CAT
 rm -f installation.profile
 install-tl-*/install-tl -profile $PROFILE
 
-SQUASHFS=texlive.squashfs
+rm -rf $TARGET_DIR/texmf-dist/doc
+rm -rf $TARGET_DIR/texmf-dist/source
+rm -f texlive.tar.xz
 
-rm -r $TARGET_DIR/texmf-dist/doc
-mksquashfs $TARGET_DIR $SQUASHFS -all-root -comp xz -Xbcj x86
+echo "Creating tarball..."
+XZ_OPT=-9 tar cJf texlive.tar.xz texlive
