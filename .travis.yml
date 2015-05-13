@@ -1,16 +1,15 @@
 language: c
-
-script: echo "\documentclass{article}\begin{document}\end{document}" | pdflatex
-
-before_install:
-  - date
-  - curl -L https://github.com/krlmlr/texlive-squashfs/raw/master/out/texlive.tar.xz | tar -JxC ~
-  - date
-
-install:
-  - PATH=$HOME/texlive/bin/x86_64-linux:$PATH
-
-notifications:
-  email:
-    on_success: change
-    on_failure: always
+sudo: false
+script:
+- bash download.sh
+- bash prepare.sh
+branches:
+  only:
+    - /\d+-\d+-\d+_\d+/
+deploy:
+  provider: releases
+  api_key:
+    secure: pT8/BX9FJFvtgCwjsUyw8gEyIs3lijJaEFsrZOyFY82wzTwB8ZfgKuIrj/caQmMQxVCOG+PAVXGZvvLU6nvf1k06D/wG8w8Ck9uDhq6eqiy+hraA4Q42gJv+KM7i8zQ9iVNg/amhKCHZyHCcoZxzdPiJ6jRq0dseCvQzPyR5WEeX3D+7iJJKubZFQye5bJKIbVzPnOAN4+lC76ClsX1KbUJv9JnvebvKUf9xebQvN/TEtqilEjB4n3C57izz27g9kKo617KOMoD1BTlGOEY6l1Wpq2ls+/sO6zXU7LBvpFJSyYXlrZsioEs4imSZIDSrBCtjFlT37ymm2JmfevMuZGAzUFqJHId8peNFYln2NySaI6JtDiYi1ATCHEMV2a+vEa1EgV0Vr6bBzbLR0c/LxqDFkM2WifwANOAMSYzdJNu5MLWxXF0ZXPcwrtYK1YJs5mDkcmBlsr4wAxDoO9CJqgl5beiUTQ9gUvVsFGHVmpw6Pms5Wlf2wPMI3PScL9FSwyI/RIFGNnlPzPyQDxWBmul54So0jaQxA0Lh/Bj9OrdQ0bzKbB15XDL2O3A2rtvmsmXQisxpTYh9iRhUwpfUCtdLhLWV2DtThpB5j9sjx54s1zJqUtLWxgJE5LP77iH4BylA0w6l/Un5wF+t+35rScWu/O215cBSdPB8A+nzYdw=
+  file: texlive.tar.bz2
+  on:
+    repo: raphink/travis-texlive

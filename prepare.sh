@@ -57,4 +57,4 @@ rm -rf $TARGET_DIR/texmf-dist/source
 rm -f texlive.tar.xz
 
 echo "Creating tarball..."
-XZ_OPT=-9 tar cJf texlive.tar.xz texlive
+XZ_OPT=-9 tar cjf texlive.tar.bz2 texlive
