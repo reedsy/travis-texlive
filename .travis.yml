@@ -1,5 +1,9 @@
 language: c
 sudo: false
+addons:
+  apt:
+    packages:
+      - p7zip-full
 script:
 - bash download.sh
 - bash prepare.sh
