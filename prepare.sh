@@ -60,4 +60,4 @@ rm -f texlive.tar.xz
 
 echo "Creating tarball..."
 7z a texlive.7z texlive >/dev/null
-XZ_OPT=-9 tar cjf texlive.tar.bz2 texlive
+XZ_OPT=-9 tar cJf texlive.tar.xz texlive
