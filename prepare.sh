@@ -51,7 +51,7 @@ option_write18_restricted 1
 END_CAT
 
 rm -f installation.profile
-install-tl-*/install-tl -profile $PROFILE | grep -v "Compressing"
+install-tl-*/install-tl -profile $PROFILE 2>&1 | grep -v "Compressing"
 
 rm -rf $TARGET_DIR/texmf-dist/doc
 rm -rf $TARGET_DIR/texmf-dist/source
