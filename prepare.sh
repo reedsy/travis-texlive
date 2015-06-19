@@ -29,6 +29,7 @@ collection-xetex 1
 collection-langfrench 1
 collection-humanities 1
 collection-fontsextra 1
+collection-publishers 1
 portable 1
 option_adjustrepo 1
 option_autobackup 1
