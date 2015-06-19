@@ -6,7 +6,7 @@ addons:
       - p7zip-full
 script:
 - bash download.sh
-- bash prepare.sh >/dev/null
+- bash prepare.sh
 branches:
   only:
     - /\d+-\d+-\d+_\d+/
