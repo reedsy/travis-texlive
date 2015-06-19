@@ -17,5 +17,6 @@ deploy:
   file:
     - texlive.7z
     - texlive.tar.xz
+  skip_cleanup: true
   on:
     repo: raphink/travis-texlive
