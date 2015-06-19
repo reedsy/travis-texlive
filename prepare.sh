@@ -51,7 +51,7 @@ option_write18_restricted 1
 END_CAT
 
 rm -f installation.profile
-install-tl-*/install-tl -profile $PROFILE 2>&1 | grep -v "Compressing"
+install-tl-*/install-tl -profile $PROFILE
 
 rm -rf $TARGET_DIR/texmf-dist/doc
 rm -rf $TARGET_DIR/texmf-dist/source
@@ -59,5 +59,5 @@ rm -f texlive.7z
 rm -f texlive.tar.xz
 
 echo "Creating tarball..."
-7z a texlive.7z texlive
+7z a texlive.7z texlive >/dev/null
 XZ_OPT=-9 tar cjf texlive.tar.bz2 texlive
