@@ -7,9 +7,6 @@ addons:
 script:
 - bash download.sh
 - bash prepare.sh
-branches:
-  only:
-    - /\d+-\d+-\d+_\d+/
 deploy:
   provider: releases
   api_key:
