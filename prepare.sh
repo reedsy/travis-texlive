@@ -59,5 +59,5 @@ rm -f texlive.7z
 rm -f texlive.tar.xz
 
 echo "Creating tarball..."
-7z a texlive.7z texlive >/dev/null
+#7z a texlive.7z texlive >/dev/null
 XZ_OPT=-9 tar cJf texlive.tar.xz texlive
