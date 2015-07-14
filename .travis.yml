@@ -12,8 +12,8 @@ deploy:
   api_key:
     secure: pT8/BX9FJFvtgCwjsUyw8gEyIs3lijJaEFsrZOyFY82wzTwB8ZfgKuIrj/caQmMQxVCOG+PAVXGZvvLU6nvf1k06D/wG8w8Ck9uDhq6eqiy+hraA4Q42gJv+KM7i8zQ9iVNg/amhKCHZyHCcoZxzdPiJ6jRq0dseCvQzPyR5WEeX3D+7iJJKubZFQye5bJKIbVzPnOAN4+lC76ClsX1KbUJv9JnvebvKUf9xebQvN/TEtqilEjB4n3C57izz27g9kKo617KOMoD1BTlGOEY6l1Wpq2ls+/sO6zXU7LBvpFJSyYXlrZsioEs4imSZIDSrBCtjFlT37ymm2JmfevMuZGAzUFqJHId8peNFYln2NySaI6JtDiYi1ATCHEMV2a+vEa1EgV0Vr6bBzbLR0c/LxqDFkM2WifwANOAMSYzdJNu5MLWxXF0ZXPcwrtYK1YJs5mDkcmBlsr4wAxDoO9CJqgl5beiUTQ9gUvVsFGHVmpw6Pms5Wlf2wPMI3PScL9FSwyI/RIFGNnlPzPyQDxWBmul54So0jaQxA0Lh/Bj9OrdQ0bzKbB15XDL2O3A2rtvmsmXQisxpTYh9iRhUwpfUCtdLhLWV2DtThpB5j9sjx54s1zJqUtLWxgJE5LP77iH4BylA0w6l/Un5wF+t+35rScWu/O215cBSdPB8A+nzYdw=
   file:
-    - texlive.7z
     - texlive.tar.xz
   skip_cleanup: true
   on:
-    repo: raphink/travis-texlive
+    tags: true
+    all_branches: true
