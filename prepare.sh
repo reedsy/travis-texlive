@@ -14,10 +14,9 @@ TARGET_DIR=$PWD/texlive
 rm -rf $TARGET_DIR
 
 PROFILE=texlive.profile
-DATE=`date -ju`
 
 cat > $PROFILE <<END_CAT
-# texlive.profile generated on $DATE
+# texlive.profile generated on 2017-07-04
 selected_scheme scheme-custom
 TEXDIR $TARGET_DIR
 TEXMFHOME $TARGET_DIR/texmf
