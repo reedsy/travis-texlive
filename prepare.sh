@@ -38,7 +38,6 @@ option_doc 0
 option_file_assocs 0
 option_fmt 1
 option_letter 0
-option_menu_integration 0
 option_path 0
 option_post_code 1
 option_src 0
