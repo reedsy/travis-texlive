@@ -40,7 +40,6 @@ collection-fontsrecommended 1
 collection-fontsextra 1
 collection-fontutils 1
 collection-publishers 1
-collection-science 1
 collection-pictures 1
 option_adjustrepo 1
 option_autobackup 0
@@ -49,7 +48,6 @@ option_doc 0
 option_file_assocs 0
 option_fmt 1
 option_letter 0
-option_menu_integration 0
 option_path 0
 option_post_code 1
 option_src 0
