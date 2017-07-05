@@ -26,10 +26,12 @@ TEXMFCONFIG $TARGET_DIR/texmf-config
 TEXMFSYSCONFIG $TARGET_DIR/texmf-config
 TEXMFVAR $TARGET_DIR/texmf-var
 TEXMFSYSVAR $TARGET_DIR/texmf-var
+binary_x86_64-darwin 0
 binary_x86_64-linux 1
 collection-basic 1
 collection-binextra 1
 collection-latex 1
+collection-latexextra 1
 option_adjustrepo 1
 option_autobackup 0
 option_desktop_integration 0
@@ -41,8 +43,8 @@ option_path 0
 option_post_code 1
 option_src 0
 option_sys_bin /usr/local/bin
-option_sys_info /usr/local/share/info
 option_sys_man /usr/local/share/man
+option_sys_info /usr/local/share/info
 option_w32_multi_user 0
 option_write18_restricted 1
 portable 1
@@ -53,7 +55,7 @@ install-tl-*/install-tl -profile $PROFILE
 
 # Install individual packages...
 PATH="$TARGET_DIR/bin/x86_64-$(get_platform):$PATH"
-tlmgr install glossaries
+tlmgr install glossaries pdfx
 
 
 rm -rf $TARGET_DIR/texmf-dist/doc
