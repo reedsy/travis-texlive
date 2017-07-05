@@ -32,6 +32,9 @@ collection-basic 1
 collection-binextra 1
 collection-latex 1
 collection-latexextra 1
+collection-latexrecommended 1
+collection-mathscience 1
+collection-pstricks 1
 collection-langgerman 1
 option_adjustrepo 1
 option_autobackup 0
@@ -56,7 +59,7 @@ install-tl-*/install-tl -profile $PROFILE
 
 # Install individual packages...
 PATH="$TARGET_DIR/bin/x86_64-$(get_platform):$PATH"
-tlmgr install glossaries pdfx algorithms algorithmicx
+tlmgr install glossaries pdfx algorithms algorithmicx siunitx
 
 
 rm -rf $TARGET_DIR/texmf-dist/doc
