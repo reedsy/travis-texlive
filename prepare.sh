@@ -56,7 +56,7 @@ install-tl-*/install-tl -profile $PROFILE
 
 # Install individual packages...
 PATH="$TARGET_DIR/bin/x86_64-$(get_platform):$PATH"
-tlmgr install glossaries pdfx algorithms
+tlmgr install glossaries pdfx algorithms algorithmicx
 
 
 rm -rf $TARGET_DIR/texmf-dist/doc
