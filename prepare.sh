@@ -18,7 +18,7 @@ PROFILE=texlive.profile
 
 cat > $PROFILE <<END_CAT
 # texlive.profile generated on 2017-07-05
-selected_scheme scheme-custom
+selected_scheme scheme-full
 TEXDIR $TARGET_DIR
 TEXMFHOME $TARGET_DIR/texmf
 TEXMFLOCAL $TARGET_DIR/texmf-local
@@ -26,7 +26,7 @@ TEXMFCONFIG $TARGET_DIR/texmf-config
 TEXMFSYSCONFIG $TARGET_DIR/texmf-config
 TEXMFVAR $TARGET_DIR/texmf-var
 TEXMFSYSVAR $TARGET_DIR/texmf-var
-binary_x86_64-darwin 0
+binary_x86_64-darwin 1
 binary_x86_64-linux 1
 collection-basic 1
 collection-bibtexextra 1
