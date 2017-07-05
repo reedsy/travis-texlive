@@ -1,5 +1,6 @@
 language: c
-sudo: false
+sudo: required
+dist: trusty
 addons:
   apt:
     packages:
@@ -13,3 +14,6 @@ deploy:
   file:
     - texlive.tar.xz
   skip_cleanup: true
+  on:
+    tags: true
+    all_branches: true
