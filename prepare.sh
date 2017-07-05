@@ -17,7 +17,7 @@ rm -rf $TARGET_DIR
 PROFILE=texlive.profile
 
 cat > $PROFILE <<END_CAT
-# texlive.profile generated on 2017-07-04
+# texlive.profile generated on 2017-07-05
 selected_scheme scheme-custom
 TEXDIR $TARGET_DIR
 TEXMFHOME $TARGET_DIR/texmf
@@ -54,7 +54,7 @@ install-tl-*/install-tl -profile $PROFILE
 
 # Install individual packages...
 PATH="$TARGET_DIR/bin/x86_64-$(get_platform):$PATH"
-tlmgr install datatool etoolbox feynmf fp framed glossaries index metapost mfirstuc nomencl substr supertabular textcase xfor xkeyval
+tlmgr install glossaries
 
 
 rm -rf $TARGET_DIR/texmf-dist/doc
