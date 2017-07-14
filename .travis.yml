@@ -14,7 +14,7 @@ deploy:
   api_key: ${GITHUB_OAUTH}
   file:
     - texlive.tar.xz
-	- texlive_onlyEN.tar.xz
+    - texlive_onlyEN.tar.xz
   skip_cleanup: true
   on:
     tags: true

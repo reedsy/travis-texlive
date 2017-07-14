@@ -2,11 +2,20 @@
 Creates a TexLive archive to be used in Travis CI.
 
 The following example show how the newest texlive distribution can be used:
+For Linux
 ```
 before_install:
-  - curl -L https://github.com/holgern/travis-texlive/releases/download/2017-07-05_07/texlive.tar.xz | tar -JxC ~
+  - curl -L https://github.com/holgern/travis-texlive/releases/download/2017-07-05_09/texlive.tar.xz | tar -JxC ~
 install:
   - PATH=$HOME/texlive/bin/x86_64-linux:$PATH
+```
+
+For MaxOS
+```
+before_install:
+  - curl -L https://github.com/holgern/travis-texlive/releases/download/2017-07-05_09/texlive.tar.xz | tar -JxC ~
+install:
+  - PATH=$HOME/texlive/bin/x86_64-darwin:$PATH
 ```
 
 The following texlive.profile is used:
