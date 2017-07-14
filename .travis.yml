@@ -8,12 +8,12 @@ addons:
 script:
 - bash download.sh
 - travis_wait 60 bash prepare_onlyEN.sh
-- travis_wait 60 bash prepare.sh
+#- travis_wait 60 bash prepare.sh
 deploy:
   provider: releases
   api_key: ${GITHUB_OAUTH}
   file:
-    - texlive.tar.xz
+#    - texlive.tar.xz
     - texlive_onlyEN.tar.xz
   skip_cleanup: true
   on:

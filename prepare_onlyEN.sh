@@ -97,7 +97,7 @@ tlmgr install glossaries pdfx algorithms algorithmicx siunitx
 
 rm -rf $TARGET_DIR/texmf-dist/doc
 rm -rf $TARGET_DIR/texmf-dist/source
-rm -f texlive.tar.xz
+rm -f texlive_onlyEN.tar.xz
 
 echo "Creating tarball..."
 XZ_OPT=-9 tar cJf texlive_onlyEN.tar.xz texlive
