@@ -7,8 +7,8 @@ addons:
       - p7zip-full
 script:
 - bash download.sh
-- travis_wait 60 bash prepare_onlyEN.sh
-#- travis_wait 60 bash prepare.sh
+#- travis_wait 60 bash prepare_onlyEN.sh
+- travis_wait 60 bash prepare.sh
 deploy:
   provider: releases
   api_key: ${GITHUB_OAUTH}
